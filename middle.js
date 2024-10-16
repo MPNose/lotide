@@ -30,8 +30,4 @@ const middle = function (array) {
   return [array[half - 1], array[half]]
 };
 
-console.log(middle([1, 2, 3, 5, 6, 7]));
-console.log(middle([1, 2]));
-
-const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(middle(arr1));
+assertArraysEqual(middle([1, 2, 3, 5, 6, 7]), [3, 5]);
