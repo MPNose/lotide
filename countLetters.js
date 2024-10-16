@@ -11,7 +11,7 @@ const countLetters = function(string) {
 
   for (let letter of string) {
     if (letter === " ") {
-      !count[letter];
+      continue;
     } else if (count[letter]) {
       count[letter] +=1;
     } else {
@@ -20,7 +20,7 @@ const countLetters = function(string) {
   }
   return count;
 };
-
+console.log(countLetters('letters numbers'));
 const result1 = countLetters("letters numbers");
 
 assertEqual(result1["l"], 1);
