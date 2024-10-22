@@ -40,3 +40,5 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 assertArraysEqual(results1, [1, 2, 5, 7, 2])
+
+module.exports = takeUntil;

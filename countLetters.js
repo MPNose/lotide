@@ -26,3 +26,5 @@ const result1 = countLetters("letters numbers");
 assertEqual(result1["l"], 1);
 assertEqual(result1["t"], 2);
 assertEqual(result1["u"], 1)
+
+module.exports = countLetters;

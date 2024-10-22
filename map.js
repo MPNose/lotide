@@ -35,3 +35,5 @@ assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
 const numbers = [1, 2, 3, 4, 5];
 const results2 = map(numbers, (number) => number += 2)
 assertArraysEqual(results2, [3, 4, 5, 6, 7]);
+
+module.exports = map;

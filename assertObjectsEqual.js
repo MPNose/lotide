@@ -38,3 +38,5 @@ const two = {
   this: 'not',
 };
 assertObjectsEqual(one,two);
+
+module.export = assertObjectsEqual;
