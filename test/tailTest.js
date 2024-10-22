@@ -4,9 +4,9 @@ const assertEqual = require("../assertEqual");
 
 describe('#tail', () => {
   
-  it("returns a new array with a shorter length", () => {
-    const result = tail(['yo yo', "lighthouse", "labs"]);
-    assert.strictEqual(result.length, 2);
+  it("returns a new array with first element removed", () => {
+    const arr = (['yo yo', "lighthouse", "labs"]);
+    assert.deepEqual(tail(arr), ["lighthouse", "labs"]);
   });
 
   it("returns a new first element in an array", () => {
@@ -22,7 +22,7 @@ describe('#tail', () => {
   it("doesn't alter the original array", () => {
     const words = ['yo yo', "lighthouse", "labs"];
     tail(words);
-    assert.strictEqual(words.length, 3);
+    assert.deepEqual(words, ['yo yo', "lighthouse", "labs"]);
   });
 
 });
